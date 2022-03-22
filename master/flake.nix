@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-unimcli-master.flake = false;
+  inputs.src-unimcli-master.ref   = "refs/heads/master";
   inputs.src-unimcli-master.owner = "unimorg";
-  inputs.src-unimcli-master.ref   = "master";
   inputs.src-unimcli-master.repo  = "unimcli";
   inputs.src-unimcli-master.type  = "github";
   
