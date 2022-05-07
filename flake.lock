@@ -3,20 +3,22 @@
     "cligen": {
       "inputs": {
         "flakeNimbleLib": [
+          "unimcli-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "unimcli-master",
           "nixpkgs"
         ],
         "src-cligen-v1_5_23": "src-cligen-v1_5_23"
       },
       "locked": {
         "dir": "v1_5_23",
-        "lastModified": 1651917786,
-        "narHash": "sha256-iuuvLka4OYQfxEGWAvXG95W2qO8754zCHAVlmF/R92A=",
+        "lastModified": 1651609682,
+        "narHash": "sha256-XK66Xbvp2yNwjxuJ6pCEhE7CvTchqYMEAKHwd9gR7L4=",
         "owner": "nim-nix-pkgs",
         "repo": "cligen",
-        "rev": "7f43944b33da6bedef706460e55d07a282854090",
+        "rev": "d1db6bc462c146fb7a72cd1965da6f8fa05c3965",
         "type": "github"
       },
       "original": {
@@ -51,9 +53,11 @@
     "nimble": {
       "inputs": {
         "flakeNimbleLib": [
+          "unimcli-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "unimcli-master",
           "nixpkgs"
         ],
         "src-nimble-v0_13_1": "src-nimble-v0_13_1"
@@ -88,11 +92,9 @@
     },
     "root": {
       "inputs": {
-        "cligen": "cligen",
         "flakeNimbleLib": "flakeNimbleLib",
-        "nimble": "nimble",
         "nixpkgs": "nixpkgs",
-        "src-unimcli-master": "src-unimcli-master"
+        "unimcli-master": "unimcli-master"
       }
     },
     "src-cligen-v1_5_23": {
@@ -142,6 +144,35 @@
       "original": {
         "owner": "unimorg",
         "ref": "refs/heads/master",
+        "repo": "unimcli",
+        "type": "github"
+      }
+    },
+    "unimcli-master": {
+      "inputs": {
+        "cligen": "cligen",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nimble": "nimble",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-unimcli-master": "src-unimcli-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651890760,
+        "narHash": "sha256-J8hzrWJjfyHAuNu3dnvV7OZVXCGmhrKsnp0vdOoSOWU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unimcli",
+        "rev": "b6118a13541bd6f93633e99f4db0b3f9bdb963b6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
         "repo": "unimcli",
         "type": "github"
       }
